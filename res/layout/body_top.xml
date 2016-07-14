@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/body_topp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		<FrameLayout 
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- android:background="#49222222" -->
+            
+	        <frontend.CircleButton
+            android:id="@+id/play_pause"
+            android:layout_width="95dip"
+            android:layout_height="95dip"
+            android:src="@drawable/av_play"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:cb_color="#000000"
+            android:background="#00000000"
+            app:cb_pressed_ring_width="16dip" />
+		</FrameLayout>
+</RelativeLayout>

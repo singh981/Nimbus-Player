@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<frontend.CircleButton
+	    android:id="@+id/playlist"
+	    android:layout_width="75dip"
+	    android:layout_height="75dip"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/options_new"
+	    app:cb_color="#246586"
+	    app:cb_pressed_ring_width="10dip" />
+
+	<frontend.CircleButton
+	    android:id="@+id/delete"
+	    android:layout_width="75dip"
+	    android:layout_height="75dip"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/options_discard"
+	    app:cb_color="#246586"
+	    app:cb_pressed_ring_width="10dip" />
+	
+	<frontend.CircleButton
+	    android:id="@+id/queue"
+	    android:layout_width="75dip"
+	    android:layout_height="75dip"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/options_next"
+	    app:cb_color="#246586"
+	    app:cb_pressed_ring_width="10dip" />
+	
+	<frontend.CircleButton
+	    android:id="@+id/main"
+	    android:layout_width="75dip"
+	    android:layout_height="75dip"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/options_overflow"
+	    app:cb_color="#246586"
+	    app:cb_pressed_ring_width="10dip" />
+
+</RelativeLayout>

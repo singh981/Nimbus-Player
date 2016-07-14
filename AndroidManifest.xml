@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samplemusic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+	
+    <application
+        
+        android:allowBackup="true"
+        android:icon="@drawable/itunes_gold_low"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+		<service android:name="backend.MusicService" ></service>
+        
+		<activity
+		    android:name="frontend.MainActivity"
+		    android:theme="@android:style/Theme.Translucent" 
+		    >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.Inflater"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:noHistory="true">
+		</activity>
+        <activity
+            android:name="frontend.Intermediary"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:noHistory="true">
+		</activity>
+        <service
+            android:name="frontend.ChatHeadService">
+        </service>
+        <service
+            android:name="frontend.BodyService">
+        </service>
+        <service
+            android:name="frontend.Serve">
+        </service>
+        
+        <activity
+            android:name="frontend.Body"
+            android:theme="@android:style/Theme.Dialog"  />
+        
+        <activity
+            android:name="backend.Titles"/>
+        
+        <activity
+            android:name="backend.Albums"/>
+        
+        <activity
+            android:name="backend.Artists"/>
+        
+        <activity
+            android:name="backend.Genre"/>
+        
+        <activity
+            android:name="backend.SongAdapter"/>
+        
+        <activity
+            android:name="backend.Song"/>
+        
+    </application>
+
+</manifest>

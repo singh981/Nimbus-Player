@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/body_top_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    >
+            
+	        <frontend.CircleButton
+            android:id="@+id/shuffle"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/av_shuffle"
+            android:layout_gravity="left|center_vertical"
+            app:cb_color="#246586"
+            app:cb_pressed_ring_width="8dip" />
+			
+	        <frontend.CircleButton
+            android:id="@+id/previous"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:src="@drawable/av_previous"
+            android:layout_gravity="right|center_vertical"
+            app:cb_color="#246586"
+            app:cb_pressed_ring_width="12dip" />
+		
+		</FrameLayout>
+</RelativeLayout>
